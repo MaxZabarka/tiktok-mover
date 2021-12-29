@@ -32,6 +32,7 @@ elif not os.path.isdir(dest_path):
 tiktoks = []
 for root, dirs, files in os.walk(source_path):
 	for file in files:
+            print(file)
             if file.endswith(".mp4") and len(file) == 36:
                 tiktoks.append(file)
 
